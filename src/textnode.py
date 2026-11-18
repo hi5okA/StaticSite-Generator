@@ -1,4 +1,5 @@
 from enum import Enum
+from src.htmlnode import LeafNode
 
 
 class TextType(Enum):
@@ -39,8 +40,6 @@ class TextNode:
 
 
 def text_node_to_html_node(text_node):
-    from htmlnode import LeafNode
-
     if text_node.text_type == TextType.TEXT:
         return LeafNode(None, text_node.text)
     if text_node.text_type == TextType.BOLD:

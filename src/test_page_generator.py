@@ -1,7 +1,7 @@
 import os
 import tempfile
 import unittest
-from page_generator import extract_title, generate_page
+from src.page_generator import extract_title, generate_page
 
 
 class TestPageGenerator(unittest.TestCase):

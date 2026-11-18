@@ -1,8 +1,14 @@
 import os
 import shutil
 import sys
-from copystatic import copy_files_recursive
-from page_generator import generate_pages_recursive
+
+# Ensure project root is in sys.path when executed directly as a script
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+from src.copystatic import copy_files_recursive
+from src.page_generator import generate_pages_recursive
 
 
 def main():

@@ -1,3 +1,3 @@
-from htmlnode import LeafNode
+from src.htmlnode import LeafNode
 
 __all__ = ["LeafNode"]

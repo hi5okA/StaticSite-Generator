@@ -1,3 +1,3 @@
-from htmlnode import ParentNode
+from src.htmlnode import ParentNode
 
 __all__ = ["ParentNode"]
